@@ -34,7 +34,7 @@ def instances():
 @snapshots.command('list')
 @click.option('--project',default=None,help="Only instances for Project (tag Project:<name>)")
 def listInstances(project):
-	"List EC2 Snapshots"
+	"List all  EC2 Snapshots"
 	
 	instances = filterInstances(project)		
 	for e in instances:
